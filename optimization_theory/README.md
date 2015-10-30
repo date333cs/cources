@@ -12,7 +12,7 @@
 
 ### C言語 ###
 + とりあえず日本語でコンピュータにさせたい作業を書く:  
-  [hmm001.c](https://github.com/date333cs/optimization/blob/master/hmm001.c) 
+  [hmm001.c](./hmm001.c) 
 
 + 空の関数を作る:  
   [hmm002.c](https://github.com/date333cs/optimization/blob/master/hmm002.c) 
