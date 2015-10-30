@@ -27,7 +27,7 @@
 
 
 ### gnuplot ###
-+ [gp301](./gp301), [gp301eps](./gp301eps),   [gp301png](./gp301png)
++ [gp301](./gp301), [gp301eps](./gp301eps), [gp301png](./gp301png)
 
   - eps ファイルを作成するときは最初の行の # をはずす．
 
