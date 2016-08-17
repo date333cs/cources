@@ -1,5 +1,5 @@
 ## 情報とコンピュータ 
-
+
 ### 2014年1月16日（木）
 ####  目次
 
@@ -59,7 +59,7 @@
   - [その1](ss001.py)
   - [その2](ss002.py)   乱数発生
   - [その3](ss102.py)   ファイルからデータを読み込む
-  - [その4](ss201.py)  英単語の出現頻度を数える．実験用ファイル：[king_james_bible_tokenized.txt](http://www.cs.miyazaki-u.ac.jp/~date/lectures/ruby/king_james_bible_tokenized.txt)
+  - [その4](ss201.py)  英単語の出現頻度を数える．実験用ファイル：[king_james_bible_tokenized.txt](http://www.cs.miyazaki-u.ac.jp/~date/lectures/ruby/king_james_bible_tokenized.txt)
   
 
 

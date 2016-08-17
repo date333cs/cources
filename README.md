@@ -1,1 +1,1 @@
-# cources
+# courses
