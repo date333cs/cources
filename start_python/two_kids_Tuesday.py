@@ -24,4 +24,4 @@ for i in range(n_trials):
 
 # print  "#cases = ", n_cases,"/", n_trials
 
-print  float(n)/float(n_cases)
+print  (float(n)/float(n_cases))

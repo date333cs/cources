@@ -15,6 +15,6 @@ def read_data(filename):
 n = read_data("random200.txt")
  
 for i in y_vec:
-        print i
+        print (i)
  
-print "#data =", n
+print ("#data =", n)

@@ -8,4 +8,4 @@ Sigma = 0.7
 random.seed( 20131030 )
  
 for i in range(T):
-    print random.gauss(0,Sigma)
+    print (random.gauss(0,Sigma))

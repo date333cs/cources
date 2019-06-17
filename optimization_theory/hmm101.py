@@ -21,7 +21,7 @@ def demo():
     for i in range(0,n):
         x [i] = random.randint(0,1)
         y [i] = random.gauss(x[i],sigma)
-        print x[i], y[i]
+        print (x[i], y[i])
 
 
 if __name__ == '__main__':

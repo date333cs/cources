@@ -15,4 +15,4 @@ for k in doc:
 list = sorted(dictionary.items(), key=lambda x:x[1], reverse=True)
  
 for k, v in list[:30]:
-    print k, v
+    print (k, v)

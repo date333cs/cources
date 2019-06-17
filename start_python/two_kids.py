@@ -17,4 +17,4 @@ for i in range(n_trials):
         if kids[0]==0 and kids[1]==0:
             n += 1
 
-print  float(n)/float(n_cases)
+print  (float(n)/float(n_cases))

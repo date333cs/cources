@@ -6,17 +6,17 @@ import matplotlib.pyplot as plt
 y_vec = []
  
 def read_data(filename):
-    f = open(filename, 'r')
-    line = f.readline()
-    while line:
-	y_vec.append(float(line))
+	f = open(filename, 'r')
 	line = f.readline()
-
-    f.close()
-    return len(y_vec)
+	while line:
+		y_vec.append(float(line))
+		line = f.readline() 
+		
+	f.close()
+	return len(y_vec)
  
 n = read_data("random200.dat")
-print "#data =", n
+print ("#data =", n)
 
 data = numpy.array(y_vec)
 
@@ -29,8 +29,8 @@ ax = fig.add_subplot(111)
 mu = numpy.mean(data)
 sigma = numpy.std(data)
 
-print 'データの平均値 ： %.5f' % mu
-print 'データの標準偏差 ：%.5f' % sigma
+print ('データの平均値 ： %.5f' % mu )
+print ('データの標準偏差 ：%.5f' % sigma )
 
 
 # 任意のテキスト（$で囲むことでTeX表記も可能）
@@ -65,4 +65,4 @@ ax.set_title('Histogram', size=16)
 plt.show()
 
 # ファイルにセーブ
-plt.savefig('graph1.png', dpi=300)
+plt.savefig('graph1.png', dpi=300)

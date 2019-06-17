@@ -30,9 +30,9 @@ ax.hist(y, bins=101, range=(-5, 5), normed=False, facecolor='g')
 ax.set_xlim(-5, 5)
 ax.grid(True)
 
-print float(n1)/float(T)
-print float(n2)/float(T)
-print float(n3)/float(T)
+print (float(n1)/float(T))
+print (float(n2)/float(T))
+print (float(n3)/float(T))
 
 # plt.savefig(ss108.jpg)   # 図のファイルを作りたいとき
 plt.show()

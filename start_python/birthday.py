@@ -16,6 +16,6 @@ for i in range(n_trials):   # 繰り返し
         else:
             b.append(day)
             if i == N-1:
-                print '全員ちがう誕生日！'
+                print ('全員ちがう誕生日！')
                         
-print float(n_matches)/float(n_trials)
+print (float(n_matches)/float(n_trials))

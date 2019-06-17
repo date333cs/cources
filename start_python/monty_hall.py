@@ -18,10 +18,10 @@ for i in range(n_trials):
     while hit [monty] == True or monty == player :
 	monty = random.randint(0,2) 
 
-    print i+1, '回目'
-    print '新車があるのは', car ,'番目のドアです．'
-    print 'プレイヤーは', player ,'番目のドアを選択しました．'
-    print 'モンティさんは', monty ,'番目のドアを開けました．'
+    print (i+1, '回目')
+    print ('新車があるのは', car ,'番目のドアです．')
+    print ('プレイヤーは', player ,'番目のドアを選択しました．')
+    print ('モンティさんは', monty ,'番目のドアを開けました．')
 
     
     # ここから自分で書いてみる！！！ 3パターン試せる！
@@ -32,10 +32,10 @@ for i in range(n_trials):
    
     
 #    print 'プレイヤーは開けるドアを', player ,'番目に変更しました．'
-    print
+    print ()
 
     if car == player:
 	n_success +=1
 
-print float(n_success)/float(n_trials)
+print (float(n_success)/float(n_trials))
 

@@ -33,7 +33,7 @@ def demo():
     y = generate_y(x,n,sigma)
 
     for i in range(0,n):
-        print x[i], y[i]
+        print (x[i], y[i])
 
 if __name__ == '__main__':
 
