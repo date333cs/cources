@@ -26,7 +26,7 @@ y = numpy.array(y)
 fig = plt.figure()
 
 ax = fig.add_subplot(111)
-ax.hist(y, bins=101, range=(-5, 5), normed=False, facecolor='g')
+ax.hist(y, bins=101, range=(-5, 5), density=False, facecolor='g')
 ax.set_xlim(-5, 5)
 ax.grid(True)
 
