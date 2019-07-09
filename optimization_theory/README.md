@@ -45,3 +45,10 @@
 + [hmm102.py](./hmm102.py)
 + [hmm103.py](./hmm103.py)
 + [hmm104.py](./hmm104.py)
+
+
+
+### テスト用データ（yと xmap 20例）
+
++ [r20190702_20_test_cases](./r20190702_20_test_cases)
+
