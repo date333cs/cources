@@ -35,7 +35,7 @@
 + 空関数の中身を少しづつ書いていく:  
   [hmm202.c](./hmm202.c) 
 
-+ テストコード（test20）:
++ テストコード（test20）:  
   [hmm211.c](./hmm211.c) 
 
 
@@ -54,12 +54,22 @@
 
 ### python ###
 
-+ [hmm101.py](./hmm101.py) 
-+ [hmm102.py](./hmm102.py)
-+ [hmm103.py](./hmm103.py)
-+ [hmm104.py](./hmm104.py)
++ python で配列（リストとよばれている）を使うには：  
+  [hmm101.py](./hmm101.py) 
+
++ クラスの作り方：  
+  [hmm102.py](./hmm102.py)
+
+
++ matplotlib を使い結果を表示：  
+  [hmm103.py](./hmm103.py)
+
++ pythonで2次元配列：  
+  [hmm104.py](./hmm104.py)
+
 + テストコード（test20）:  
   [hmm211.py](./hmm211.py) 
+
 + pdf ファイルの作成:  
   [hmm212.py](./hmm212.py) 
 
@@ -67,4 +77,8 @@
 ### テスト用データ（yと xmap 20例）
 
 + [r20190702_20_test_cases](./r20190702_20_test_cases)
+
+
+### LaTeX を使ったレポート作成
++ [sample190720report.tex](./sample190720report.tex)
 
