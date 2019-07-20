@@ -81,4 +81,5 @@
 
 ### LaTeX を使ったレポート作成
 + [sample190720report.tex](./sample190720report.tex)
-
++ [fig_hmm212.pdf](./fig_hmm212.pdf)
++ [hmm102.py](./hmm102.py)
