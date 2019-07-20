@@ -45,7 +45,10 @@
 + [hmm102.py](./hmm102.py)
 + [hmm103.py](./hmm103.py)
 + [hmm104.py](./hmm104.py)
-
++ テストコード（test20）:  
+  [hmm211.py](./hmm211.py) 
++ pdf ファイルの作成:  
+  [hmm212.py](./hmm212.py) 
 
 
 ### テスト用データ（yと xmap 20例）
