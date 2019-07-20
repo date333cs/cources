@@ -24,6 +24,8 @@
 + [hmm103.c](./hmm103.c) 
 + [hmm105.c](./hmm105.c) 
 + [hmm201.c](./hmm201.c) 
++ テストコード（test20）:
+  [hmm211.c](./hmm211.c) 
 
 
 ### gnuplot ###

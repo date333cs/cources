@@ -4,6 +4,8 @@
 
 #define RAND_SEED 20190720
 #define N_DATA 200
+#define N_TEST_DATA_SET 20
+
 
 #define SIGMA 0.7 // 加わるノイズの標準偏差
 #define P00 0.99 // 状態遷移確率の定義．P01 は 0→1 の遷移確率
@@ -15,8 +17,13 @@ int x[N_DATA]; // もともとの信号． 0 か 1
 int xmap[N_DATA]; // 推定値． 0 か 1
 double y[N_DATA];  // 観測データ
 
+int  Txmap[N_TEST_DATA_SET][N_DATA]; // テスト用：推定値． 
+double Ty[N_TEST_DATA_SET][N_DATA];  // テスト用：観測データ
+
 int S[N_DATA][2];  // S[2][b] = argmax_a { ( C[2][a] + h(a,b) } 
 double C[N_DATA][2];  
+
+double lp[2][2]; // log(P00) などを代入．
 
 double nrnd();
 
@@ -103,6 +110,51 @@ double nrnd(){
     }
 }
 
+
+void test20(){
+
+  int i,j;
+  int n_passed;
+  
+  // テスト用データ 20例のファイルからの読み込み
+  
+  FILE *fp;
+  fp = fopen("r20190702_20_test_cases", "r");
+  if (fp == NULL){
+    fprintf(stderr, "Can't open data file.\n");
+    exit(-1);
+  } 
+  for (i=0; i<N_DATA; i++) {
+    for (j=0; j<N_TEST_DATA_SET; j++) {
+      fscanf(fp,"%lf",&Ty[j][i]);
+      fscanf(fp,"%d",&Txmap[j][i]);
+    }
+  } 
+  fclose(fp);
+  
+  for (j=0; j<N_TEST_DATA_SET; j++) {
+    
+    for (i=0; i<N_DATA; i++) {
+      y[i] = Ty[j][i];
+    }
+    compute_xmap ();
+    n_passed = 0;
+    for (i=0; i<N_DATA; i++) {
+      if ( xmap[i] + 2 == Txmap[j][i] ){
+        n_passed++;
+      }
+    }
+    if ( n_passed == N_DATA){
+      printf("%d: passed\n", j);
+    }
+    else{
+      printf("%d: not passed\n", j);
+    }
+  } 
+  
+}
+
+    
 void demo(){
 
   /* 問題を作る（200 個のデータ生成） */
@@ -137,7 +189,8 @@ int main ( int argc , char * argv []){
   }
   srand48(seed); /* 擬似乱数の種を設定 */
 
-  demo();
+  test20();
+  // demo();
 
   return 0;
 
