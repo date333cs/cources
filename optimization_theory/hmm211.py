@@ -16,8 +16,8 @@ class HMM:
     def __init__(self, n, sigma):
         self.n = n
         self.sigma = sigma
-        self.S = make_matrix(2, self.n)
-        self.C = make_matrix(2, self.n)
+        self.S = make_matrix(self.n, 2)
+        self.C = make_matrix(self.n, 2)
 
         self.x = [0]*self.n
         self.xmap = [0]*self.n
